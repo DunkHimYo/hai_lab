@@ -254,7 +254,7 @@ if __name__=="__main__":
 
     model=partial(Ann_seq,Nin,Nh,Nout)
 
-    train_model=TFWrapper(model=model)
+    train_model=TFWrapper(datra=None, label=None, model=model)
 
     train_model.x_train=x_train
     train_model.x_test=x_test
